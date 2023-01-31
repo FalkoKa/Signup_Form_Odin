@@ -10,8 +10,11 @@
   <body>
     <main>
       <div class="left">
-        <h1>ODIN</h1>
-        <p>
+        <div class="odin">
+          <img src="./images/odin-lined.png" alt="Odin" />
+          <h1>ODIN</h1>
+        </div>
+        <p class="image-credits">
           Photo by
           <a
             href="https://unsplash.com/@alex_andrews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -29,47 +32,54 @@
           <p>
             This is a demo registration page! You know you need something like
             this in your life to help you realize your deepest dreams. Sign up
-            now to get started.
+            <em>now</em> to get started.
           </p>
           <p>You know you want to.</p>
         </div>
         <div class="form">
           <form>
-            <div class="discription">
-              <h2>Let's do this!</h2>
-              <span>Fields marked with an asterisk (*) are required</span>
-            </div>
+            <div class="test">
+              <div class="description">
+                <h2>Let's do this!</h2>
+                <span>Fields marked with an asterisk (*) are required</span>
+              </div>
 
-            <div class="input-fields">
-              <p>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="firstName" id="first-name" required />
-              </p>
-              <p>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="lastName" id="last-name" required />
-              </p>
-              <p>
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required />
-              </p>
-              <p>
-                <label for="phone-number">PHONE NUMBER</label>
-                <input
-                  type="tel"
-                  name="phonenumber"
-                  id="phone-number"
-                  required
-                />
-              </p>
-              <p>
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" required />
-              </p>
-              <p>
-                <label for="password">PASSWORD</label>
-                <input type="password" name="" id="password" required />
-              </p>
+              <div class="input-fields">
+                <p class="input">
+                  <label for="first-name">FIRST NAME *</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="first-name"
+                    required
+                  />
+                </p>
+                <p class="input">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="lastName" id="last-name" />
+                </p>
+                <p class="input">
+                  <label for="email">EMAIL *</label>
+                  <input type="email" name="email" id="email" required />
+                </p>
+                <p class="input">
+                  <label for="phone-number">PHONE NUMBER</label>
+                  <input type="tel" name="phonenumber" id="phone-number" />
+                </p>
+                <p class="input">
+                  <label for="password">PASSWORD *</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                </p>
+                <p class="input">
+                  <label for="password">PASSWORD *</label>
+                  <input type="password" name="" id="password" required />
+                </p>
+              </div>
             </div>
 
             <div class="button-fields">
@@ -79,7 +89,7 @@
           </form>
         </div>
         <div class="footer">
-          <p>Falko Kammel</p>
+          <p>Falko Kammel 2023</p>
         </div>
       </div>
     </main>

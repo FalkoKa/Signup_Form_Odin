@@ -1,4 +1,169 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+div.left {
+  min-width: 35%;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
 @font-face {
   font-family: Norse;
   src: url(./Norse-Bold.otf);
+}
+
+div.odin {
+  background: rgba(7, 7, 7, 0.404);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  padding: 20px;
+}
+
+div.odin h1 {
+  color: white;
+  font-family: Norse;
+  font-size: 10rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  height: 10rem;
+}
+
+p.image-credits {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9fafb;
+}
+
+div.top,
+div.button-fields,
+div.test {
+  padding: 35px;
+}
+
+div.test {
+  background-color: white;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.1rem;
+}
+
+div.top p {
+  width: 70%;
+  margin-top: 0;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+div.footer {
+  background-color: #505459;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background: inherit;
+  height: 3rem;
+  width: 12rem;
+  border-radius: 10px;
+  color: #2e3032;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 2px solid #317dad;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: #317dad;
+  transform: scale(1.03);
+}
+
+div.button-fields a {
+  color: #317dad;
+  font-weight: bold;
+}
+
+/* FORM STYLE */
+div.description span,
+div.input-fields label {
+  opacity: 0.5;
+}
+
+div.input-fields {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  width: 100;
+}
+
+p.input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  width: 50%;
+}
+
+input {
+  width: 75%;
+  margin-top: 0.8rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  color: black;
+  opacity: 1 !important;
+  padding: 0 12px;
+}
+
+input:required {
+  border: 1px solid black;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  border: 2px solid blue;
 }
